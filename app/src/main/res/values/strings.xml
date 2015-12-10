@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DormGuardP3</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_live_feed">LiveFeed</string>
+    <string name="title_activity_video_library">VideoLibrary</string>
+    <string name="title_activity_video_library_player">VideoLibraryPlayer</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_user_access">UserAccess</string>
+</resources>

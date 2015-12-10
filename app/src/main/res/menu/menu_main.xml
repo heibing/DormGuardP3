@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.lars.dormguardp3.MainActivity"
+    >
+
+    <item android:id="@+id/activation"
+        android:title="Activation"
+        android:orderInCategory="100"
+        android:icon="@drawable/lock"
+        app:showAsAction="always"
+        ></item>
+
+    <item android:id="@+id/login"
+        android:title="Login"
+        android:orderInCategory="101"
+        android:icon="@drawable/login"
+        app:showAsAction="always"
+        ></item>
+
+    <item android:id="@+id/userAccess"
+        android:title="UserAccess"
+        android:orderInCategory="102"
+        android:icon="@drawable/useraccess"
+        app:showAsAction="always"
+        ></item>
+
+    <item android:id="@+id/videoLibrary"
+        android:title="VideoLibrary"
+        android:orderInCategory="103"
+        android:icon="@drawable/videolibrary"
+        app:showAsAction="always"
+        ></item>
+
+    <item android:id="@+id/liveFeed"
+        android:title="LiveFeed"
+        android:orderInCategory="104"
+        android:icon="@drawable/livefeed"
+        app:showAsAction="always"
+        ></item>
+
+</menu>
