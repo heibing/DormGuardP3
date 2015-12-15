@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
         if(b)
         {
-            r.setBackgroundColor(Color.RED);
+            r.setBackgroundColor(Color.GREEN);
         }
         else
         {
-            r.setBackgroundColor(Color.GREEN);
+            r.setBackgroundColor(Color.RED);
         }
     }
 

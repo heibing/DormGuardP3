@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="com.example.lars.dormguardp3.MainActivity"
-    android:background="#7cfc00"
+    android:background="#DC3126"
     >
 
 
