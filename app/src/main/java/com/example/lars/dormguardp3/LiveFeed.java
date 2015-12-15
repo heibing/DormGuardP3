@@ -29,17 +29,15 @@ public class LiveFeed extends AppCompatActivity {
         return true;
     }
 
+    //Method handling navigation through the actionbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.activation) {
             Toast.makeText(getApplicationContext(), "Activation", Toast.LENGTH_SHORT).show();
-            // Start VideoLibraryPlayer.class
             Intent myIntent = new Intent(LiveFeed.this,
                     MainActivity.class);
             startActivity(myIntent);

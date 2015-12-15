@@ -33,6 +33,8 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
 
     }
 
+
+    //Method Handling the activaiton button and the color change
     @Override
     public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
         if(b)
@@ -52,11 +54,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         return true;
     }
 
+    //Method handling navigation through the actionbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement

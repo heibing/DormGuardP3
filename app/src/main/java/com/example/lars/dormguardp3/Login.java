@@ -9,18 +9,53 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
+
 public class Login extends AppCompatActivity {
+
+    private EditText email,password;
+    private Button sign_in_register;
+    //private RequestQueue requestQueue;
+    private static final String URL = "http://localhost:8080/dormguard2/user_control.php";;
+    private String localpassword;
+    private String localemail;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
+        //Hardcoded email and password for testing
+        email = (EditText) findViewById(R.id.email);
+        password = (EditText) findViewById(R.id.password);
+        sign_in_register = (Button) findViewById(R.id.sign_in_register);
+
+
+        //Method checking if email and password are correct using if statements and a clicklistener
+        sign_in_register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                localpassword = password.getText().toString();
+                localemail = email.getText().toString();
+
+
+                if (localemail.equals("test@gmail.com")==true) {
+                    if (localpassword.equals("12345")==true) {
+                        Toast.makeText(getApplicationContext(), "SUCCESS " + localpassword, Toast.LENGTH_SHORT).show();
+
+                        startActivity(new Intent(getApplicationContext(), MainActivity.class));
+
+                    }}
+            }
+        });
     }
+
+
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -76,6 +76,7 @@ public class UserAccess extends AppCompatActivity {
         return true;
     }
 
+    //Method handling navigation through the actionbar
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
